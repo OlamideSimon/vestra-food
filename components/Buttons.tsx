@@ -4,7 +4,7 @@ import React, { HTMLAttributes } from 'react'
 import { motion } from 'framer-motion'
 
 interface ButtonType extends HTMLAttributes<HTMLButtonElement> {
-  className: string
+  className?: string
 }
 
 const Button = ({ className, children }: ButtonType) => {

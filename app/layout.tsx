@@ -1,10 +1,11 @@
-import Navbar from '@/components/Navbar'
+import Navbar from '@/sections/Navbar'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Cabin } from 'next/font/google'
 
 import 'swiper/css'
 import 'swiper/css/bundle'
+import Footer from '@/sections/Footer'
 
 const cabin = Cabin({ subsets: ['latin'] })
 
@@ -18,7 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={cabin.className}>
         <Navbar />
-        <main className="mt-10 overflow-x-hidden">{children}</main>
+        <main className="overflow-x-hidden mt-20 mb-36 px-10 md:px-20">{children}</main>
+        <Footer />
       </body>
     </html>
   )
